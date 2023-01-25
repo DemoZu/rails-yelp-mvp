@@ -1,2 +1,6 @@
-<h1>Restaurants#show</h1>
-<p>Find me in app/views/restaurants/show.html.erb</p>
+
+<%# <p>Find me in app/views/restaurants/show.html.erb</p> %>
+<h1><%= @restaurant.name %></h1>
+<h2><%= @restaurant.address %></h2>
+<h2><%= @restaurant.category %></h2>
+<p class="btn btn-success btn-lg"> <%= link_to "<button>Back to Restaurants</button>".html_safe, '/restaurants' %> </p>
